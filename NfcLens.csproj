@@ -5,7 +5,12 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>Assets\nfc-lens.ico</ApplicationIcon>
   </PropertyGroup>
+  <ItemGroup>
+    <!-- Optional network logos: drop brand_visa.png and brand_mastercard.png into Assets\ to replace the text marks. -->
+    <None Include="Assets\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Remove="Core/**/*.cs" />
     <ProjectReference Include="Core/NfcLens.Core.csproj" />
